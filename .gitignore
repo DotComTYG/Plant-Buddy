@@ -8,6 +8,7 @@ assets/.DS_Store
 # Build outputs
 Plant Buddy-darwin-x64/
 Plant Buddy-win32-ia32/
+Plant Buddy (Mac OS)/
 dist/
 
 # Temporary and intermediate files
