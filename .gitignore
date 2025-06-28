@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# macOS metadata
+.DS_Store
+assets/.DS_Store
+
+# Build outputs
+Plant Buddy-darwin-x64/
+Plant Buddy-win32-ia32/
+dist/
+
+# Temporary and intermediate files
+tmp-svg2png/
+assets/PlantBuddy.iconset/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Environment files
+.env 
