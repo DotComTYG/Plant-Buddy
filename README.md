@@ -4,6 +4,18 @@ A beautiful, cozy plant watering tracker app built with Electron. Keep track of 
 
 ---
 
+## 📸 Screenshots
+
+| Dashboard Overview | Empty State | Quick Actions & Stats |
+|-------------------|-------------|----------------------|
+| ![Dashboard](screenshots/dashboard.png) | ![Empty State](screenshots/empty%20state.png) | ![Quick Actions](screenshots/dashboard%202.png) |
+
+**Add Plant Modal:**
+
+![Add Plant Modal](screenshots/add%20plant.png)
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
