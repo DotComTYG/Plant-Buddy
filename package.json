@@ -4,13 +4,27 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . 'Plant Buddy' --platform=all --arch=x64 --out=dist --overwrite",
+    "build:mac": "electron-packager . 'Plant Buddy' --platform=darwin --arch=x64 --out=dist --overwrite",
+    "build:win": "electron-packager . 'Plant Buddy' --platform=win32 --arch=x64 --out=dist --overwrite",
+    "build:linux": "electron-packager . 'Plant Buddy' --platform=linux --arch=x64 --out=dist --overwrite",
+    "build:mac:x64": "electron-packager . 'Plant Buddy' --platform=darwin --arch=x64 --out=dist --overwrite",
+    "build:mac:arm64": "electron-packager . 'Plant Buddy' --platform=darwin --arch=arm64 --out=dist --overwrite",
+    "build:mac:universal": "npm run build:mac:x64 && npm run build:mac:arm64 && ./node_modules/.bin/electron-universal 'dist/Plant Buddy-darwin-x64/Plant Buddy.app' 'dist/Plant Buddy-darwin-arm64/Plant Buddy.app' 'dist/Plant Buddy-darwin-universal/Plant Buddy.app'",
+    "make:universal": "node make-universal.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "electron",
+    "plant-care",
+    "desktop-app",
+    "plant-management"
+  ],
+  "author": "Darryl Gay",
+  "license": "MIT",
+  "description": "A beautiful desktop application for managing your plant collection and care schedule",
   "devDependencies": {
+    "@electron/universal": "^1.5.1",
     "electron": "^31.0.1",
     "electron-packager": "^17.1.2"
   }
